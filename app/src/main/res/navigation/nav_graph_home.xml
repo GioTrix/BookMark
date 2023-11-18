@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="it.uniroma2.pjdm.bookapp.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bookDetail"
+            app:destination="@id/bookDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="it.uniroma2.pjdm.bookapp.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="it.uniroma2.pjdm.bookapp.ui.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_annotationFragment"
+            app:destination="@id/annotationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/annotationFragment"
+        android:name="it.uniroma2.pjdm.bookapp.ui.annotation.AnnotationFragment"
+        android:label="AnnotationFragment" >
+        <action
+            android:id="@+id/action_annotationFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_annotationFragment_to_takesNotes"
+            app:destination="@id/takesNotes" />
+    </fragment>
+    <fragment
+        android:id="@+id/takesNotes"
+        android:name="it.uniroma2.pjdm.bookapp.ui.annotation.TakesNotes"
+        android:label="fragment_takes_notes"
+        tools:layout="@layout/fragment_takes_notes" >
+        <action
+            android:id="@+id/action_takesNotes_to_annotationFragment"
+            app:destination="@id/annotationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="it.uniroma2.pjdm.bookapp.ui.statistics.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" >
+        <action
+            android:id="@+id/action_statisticsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetail"
+        android:name="it.uniroma2.pjdm.bookapp.ui.home.BookDetail"
+        android:label="fragment_book_detail"
+        tools:layout="@layout/fragment_book_detail" >
+        <action
+            android:id="@+id/action_bookDetail_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634848972530",
+    "project_id": "bookdb-2e800",
+    "storage_bucket": "bookdb-2e800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634848972530:android:05c0a9f0da762d63f04a6b",
+        "android_client_info": {
+          "package_name": "it.uniroma2.pjdm.bookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBik2KLRC8Ozm_eTUmj-MKFfi3FrBc9QEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

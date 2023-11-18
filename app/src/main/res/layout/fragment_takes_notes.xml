@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_200"
+    tools:context=".ui.annotation.TakesNotes">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notes"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/titillium_web"
+                android:padding="12dp"
+                android:text="BookMark"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:id="@+id/iv_save"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_save_24"
+                android:padding="8dp"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/et_take_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titillium_web"
+        android:hint="Aggiungi una frase"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_close_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/titillium_web_bold"
+        android:text="Chiudi"
+        android:background="@drawable/bt_close_background"
+        android:textColor="@color/black"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+</LinearLayout>
