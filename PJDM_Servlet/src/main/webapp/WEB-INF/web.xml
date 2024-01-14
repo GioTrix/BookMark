@@ -15,23 +15,23 @@
 	
 	<context-param>
 		<param-name>ip</param-name>
-		<param-value>127.0.0.1</param-value>
+		<param-value>[retract]</param-value>
 	</context-param>
 	<context-param>
 		<param-name>port</param-name>
-		<param-value>3306</param-value>
+		<param-value>[retract]</param-value>
 	</context-param>
 	<context-param>
 		<param-name>dbName</param-name>
-		<param-value>BookMark</param-value>
+		<param-value>[retract]</param-value>
 	</context-param>
 	<context-param>
 		<param-name>userName</param-name>
-		<param-value>root</param-value>
+		<param-value>[retract]</param-value>
 	</context-param>
 	<context-param>
 		<param-name>password</param-name>
-		<param-value>giolinucs</param-value>
+		<param-value>[retract]</param-value>
 	</context-param>
 	<servlet>
 		<description></description>
